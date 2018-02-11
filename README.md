@@ -2,7 +2,7 @@
 🏔 ᚠᚢᚦᚬᚱᚴ 🌋
 </h1>
 
-Convert an entire webpage from the **Latin** scrip into **Futhark**!
+Convert an entire webpage from the **Latin** script into **Futhark**!
 
 Reading in ᚠᚢᚦᚬᚱᚴ will greatly enhance your web-browsing experience.
 
