@@ -17,7 +17,7 @@ Reading in ᚠᚢᚦᚬᚱᚴ will greatly enhance your web-browsing experience.
 
 The Elder Futhark is the oldest form of the runic alphabets, used from the 2nd to the 8th century in Scandinavia and Germany.
 
-**Paste the following script** into the developer console, or into the address bar of your browser, just check to see that your browser doesn't remove the `javascript:` part!
+**Paste the following script** into the developer console, or into the address bar of your browser, just check to see that your browser doesn't remove the `javascript:` part! Alternatively, you can add it as a Bookmark in your browser.
 
 ```js
 javascript:!function(){!function e(a){if(3==a.nodeType&&(a.data=a.data.replace(/(f)/gi,"ᚠ")
@@ -47,7 +47,7 @@ Into:
 
 The Younger Futhark was used from the 9th century to the 12th in Scandinavia.
 
-**Paste the following script** into the developer console, or into the address bar of your browser, just check to see that your browser doesn't remove the `javascript:` part!
+**Paste the following script** into the developer console, or into the address bar of your browser, just check to see that your browser doesn't remove the `javascript:` part! Alternatively, you can add it as a Bookmark in your browser.
 
 ```js
 javascript:!function(){!function e(a){if(3==a.nodeType&&(a.data=a.data.replace(/(f)/gi,"ᚠ")
