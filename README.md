@@ -79,3 +79,7 @@ Into:
 - This does not transcribe phonetically
 - Some letters may be incorrect
 - Only checks for the letters of the English and Icelandic alphabet
+
+## Fonts
+
+* [Download the Noto Sans Runic font from Google](https://www.google.com/get/noto/#sans-runr)
