@@ -17,28 +17,34 @@
 
     body {
       font-family: 'Noto Sans Runic', sans-serif;
-      max-width: 400px;
+      max-width: 500px;
       margin: auto;
       background: #f1f1f1;
     }
 
     #output {
-      font-size: 29px;
+      font-size: 38px;
       letter-spacing: -1px;
+      margin-top: 40px;
+    }
+    textarea {
+      width: 100%;
+      display: block;
+      min-height: 100px;
+      font-size: 22px;
     }
   </style>
 </head>
 
 <body>
-  <h1>Futhark transcriber!</h1>
-  <textarea id="input">
-  </textarea>
+  <h1>Futhark transcriber</h1>
+  <textarea id="input" placeholder="Write text here..."></textarea>
   <select id="selector">
     <option value="elder">Elder Futhark</option>
     <option value="younger" selected>Younger Futhark</option>
   </select>
   <div id="output">
-    ᛚᚢᚱᛁᛘ ᛁᛒᛋᚢᛘ ᛏᚢᛚᚢᚱ ᛋᛁᛏ ᛅᛘᛁᛏ, ᛋᚢᚾᛋᛁᛋᛏᛁᛏᚢᚱ ᛅᛏᛁᛒᛁᛋᛋᛁᚾᚴ ᛁᛚᛁᛏ, ᛋᛁᛏ ᛏᚢ ᛁᛁᚢᛋᛘᚢᛏ ᛏᛁᛘᛒᚢᚱ ᛁᚾᛋᛁᛏᛁᛏᚢᚾᛏ ᚢᛏ ᛚᛅᛒᚢᚱᛁ ᛁᛏ ᛏᚢᛚᚢᚱᛁ ᛘᛅᚴᚾᛅ ᛅᛚᛁᚴᚢᛅ.
+    ᚢᚱᛁᛏᛁ ᛏᛁᛋᛏ ᚼᛁᚱᛁ...
   </div>
 
   <script type="text/javascript">
@@ -92,12 +98,19 @@
           .replace(/(t|d)/ig, 'ᛞ')
       }
       const input = document.getElementById('input')
+      const selector = document.getElementById('selector')
       const transcribe = () => {
-        console.log(input.value)
+        let output
+        if(selector.value == 'younger') {
+          output = youngerFuthark(input.value)
+        } else {
+          output = elderFuthark(input.value)
+        }
+        document.getElementById('output').innerHTML = output
       }
       input.addEventListener('change', transcribe)
       input.addEventListener('keyup', transcribe)
-      document.getElementById('selector').addEventListener('keyup', transcribe)
+      selector.addEventListener('change', transcribe)
     })()
   </script>
 </body>
