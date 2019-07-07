@@ -1,10 +1,14 @@
 <h1 align="center">
-🏔 ᚠᚢᚦᚬᚱᚴ 🌋
+🏔 Futhark transcriber / ᚠᚢᚦᚬᚱᚴ 🌋
 </h1>
 
-Convert an entire webpage from the **Latin** script into **Futhark**!
+**[Try the Futhark transcriber here](https://egilll.github.io/futhark/index.html)**
 
-Reading in ᚠᚢᚦᚬᚱᚴ will greatly enhance your web-browsing experience.
+---
+
+This is a transcriber from the **Latin** script into **Futhark**. You can [enter your text here](https://egilll.github.io/futhark/index.html) or you can follow the instructions below in order to convert an entire webpage from the **Latin** script into **Futhark**!
+
+Reading webpages in ᚠᚢᚦᚬᚱᚴ will greatly enhance your web-browsing experience.
 
 **You can choose from:**
 
@@ -82,4 +86,4 @@ Into:
 
 ## Fonts
 
-* [Download the Noto Sans Runic font from Google](https://www.google.com/get/noto/#sans-runr)
+* [Download the Noto Sans Runic font from Google](https://github.com/egilll/futhark/raw/master/docs/NotoSansRunic.ttf)
