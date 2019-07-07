@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="" />
+  <meta property="og:description" content="" />
+  <meta property="og:title" content="" />
+  <meta property="og:image" content="" />
+  <title>Futhark</title>
+  <style type="text/css">
+    @font-face {
+      font-family: 'Noto Sans Runic';
+      src: url('NotoSansRunic.ttf');
+    }
+
+    body {
+      font-family: 'Noto Sans Runic', sans-serif;
+      max-width: 400px;
+      margin: auto;
+      background: #f1f1f1;
+    }
+
+    #output {
+      font-size: 29px;
+      letter-spacing: -1px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Futhark transcriber!</h1>
+  <textarea id="input">
+  </textarea>
+  <select id="selector">
+    <option value="elder">Elder Futhark</option>
+    <option value="younger" selected>Younger Futhark</option>
+  </select>
+  <div id="output">
+    ᛚᚢᚱᛁᛘ ᛁᛒᛋᚢᛘ ᛏᚢᛚᚢᚱ ᛋᛁᛏ ᛅᛘᛁᛏ, ᛋᚢᚾᛋᛁᛋᛏᛁᛏᚢᚱ ᛅᛏᛁᛒᛁᛋᛋᛁᚾᚴ ᛁᛚᛁᛏ, ᛋᛁᛏ ᛏᚢ ᛁᛁᚢᛋᛘᚢᛏ ᛏᛁᛘᛒᚢᚱ ᛁᚾᛋᛁᛏᛁᛏᚢᚾᛏ ᚢᛏ ᛚᛅᛒᚢᚱᛁ ᛁᛏ ᛏᚢᛚᚢᚱᛁ ᛘᛅᚴᚾᛅ ᛅᛚᛁᚴᚢᛅ.
+  </div>
+
+  <script type="text/javascript">
+    (function() {
+      function youngerFuthark(input) {
+        return input
+          .replace(/(f)/ig, 'ᚠ')
+          .replace(/(á)/ig, 'ᛅᚢ')
+          .replace(/(ó)/ig, 'ᚬᚢ')
+          .replace(/(u|v|o|ö|ú|ø|w)/ig, 'ᚢ')
+          .replace(/(þ|ð)/ig, 'ᚦ')
+          .replace(/(o)/ig, 'ᚬ')
+          .replace(/(r)/ig, 'ᚱ')
+          .replace(/(k|g|q)/ig, 'ᚴ')
+          .replace(/(h)/ig, 'ᚼ')
+          .replace(/(n)/ig, 'ᚾ')
+          .replace(/(i|j|e|é|í|ý|y)/ig, 'ᛁ')
+          .replace(/(a|æ)/ig, 'ᛅ')
+          .replace(/(s|c|x)/ig, 'ᛋ')
+          .replace(/(t|d)/ig, 'ᛏ')
+          .replace(/(b|p)/ig, 'ᛒ')
+          .replace(/(m)/ig, 'ᛘ')
+          .replace(/(l)/ig, 'ᛚ')
+          .replace(/(z)/ig, 'ᛦ')
+      }
+      function elderFuthark(input) {
+        return input
+          .replace(/(f)/ig, 'ᚠ')
+          .replace(/(u|o|ö|ú|ø)/ig, 'ᚢ')
+          .replace(/(þ|ð)/ig, 'ᚦ')
+          .replace(/(a)/ig, 'ᚨ')
+          .replace(/(r)/ig, 'ᚱ')
+          .replace(/(k|q)/ig, 'ᚲ')
+          .replace(/(g)/ig, 'ᚷ')
+          .replace(/(w|v)/ig, 'ᚹ')
+          .replace(/(h)/ig, 'ᚺ')
+          .replace(/(ng)/ig, 'ᛜ')
+          .replace(/(n)/ig, 'ᚾ')
+          .replace(/(i|í|ý|y)/ig, 'ᛁ')
+          .replace(/(j)/ig, 'ᛃ')
+          .replace(/(æ)/ig, 'ᛇ')
+          .replace(/(p)/ig, 'ᛈ')
+          .replace(/(z)/ig, 'ᛉ')
+          .replace(/(s|c|x)/ig, 'ᛊ')
+          .replace(/(t)/ig, 'ᛏ')
+          .replace(/(b)/ig, 'ᛒ')
+          .replace(/(e|é)/ig, 'ᛖ')
+          .replace(/(m)/ig, 'ᛗ')
+          .replace(/(l)/ig, 'ᛚ')
+          .replace(/(o)/ig, 'ᛟ')
+          .replace(/(t|d)/ig, 'ᛞ')
+      }
+      const input = document.getElementById('input')
+      const transcribe = () => {
+        console.log(input.value)
+      }
+      input.addEventListener('change', transcribe)
+      input.addEventListener('keyup', transcribe)
+      document.getElementById('selector').addEventListener('keyup', transcribe)
+    })()
+  </script>
+</body>
+
+</html>

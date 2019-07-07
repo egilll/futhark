@@ -2,7 +2,7 @@
   Convert an entire webpage into Elder Futhark
 */
 (function() {
-  function youngerFuthark(input) {
+  function elderFuthark(input) {
     return input
       .replace(/(f)/ig,              'ᚠ')
       .replace(/(u|o|ö|ú|ø)/ig,      'ᚢ')
@@ -31,7 +31,7 @@
   }
   function findText(node) {
     if (node.nodeType == 3) {
-      node.data = youngerFuthark(node.data)
+      node.data = elderFuthark(node.data)
     }
     if (node.nodeType == 1 && node.nodeName != "SCRIPT") {
       for (var i = 0; i < node.childNodes.length; i++) {
