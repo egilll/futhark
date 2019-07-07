@@ -4,9 +4,7 @@
 
 **[Try the Futhark transcriber here](https://egilll.github.io/futhark/index.html)**
 
----
-
-This is a transcriber from the **Latin** script into **Futhark**. You can [enter your text here](https://egilll.github.io/futhark/index.html) or you can follow the instructions below in order to convert an entire webpage from the **Latin** script into **Futhark**!
+This is a transcriber from the **Latin** script into **Futhark**. You can [enter your text here](https://egilll.github.io/futhark/index.html) or you can follow the instructions below in order to convert an entire webpage.
 
 Reading webpages in ᚠᚢᚦᚬᚱᚴ will greatly enhance your web-browsing experience.
 
