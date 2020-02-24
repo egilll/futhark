@@ -4,6 +4,8 @@
 (function() {
   function elderFuthark(input) {
     return input
+      .replace(/(á)/ig,            'ᚨᚢ')
+      .replace(/(ó)/ig,              'ᛟᚢ')
       .replace(/(f)/ig,              'ᚠ')
       .replace(/(u|o|ö|ú|ø)/ig,      'ᚢ')
       .replace(/(þ|ð)/ig,            'ᚦ')
