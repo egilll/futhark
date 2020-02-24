@@ -22,7 +22,7 @@ The Elder Futhark is the oldest form of the runic alphabets, used from the 2nd t
 **Paste the following script** into the developer console, or into the address bar of your browser, just check to see that your browser doesn't remove the `javascript:` part! Alternatively, you can add it as a Bookmark in your browser.
 
 ```js
-javascript:!function(){!function e(a){if(3==a.nodeType&&(a.data=a.data.replace(/(f)/gi,"ᚠ")
+javascript:!function(){!function e(a){if(3==a.nodeType&&(a.data=a.data.replace(/(á)/ig,'ᚨᚢ').replace(/(ó)/ig,'ᛟᚢ').replace(/(f)/gi,"ᚠ")
 .replace(/(u|o|ö|ú|ø)/gi,"ᚢ").replace(/(þ|ð)/gi,"ᚦ").replace(/(a)/gi,"ᚨ")
 .replace(/(r)/gi,"ᚱ").replace(/(k|q)/gi,"ᚲ").replace(/(g)/gi,"ᚷ").replace(/(w|v)/gi,"ᚹ")
 .replace(/(h)/gi,"ᚺ").replace(/(ng)/gi,"ᛜ").replace(/(n)/gi,"ᚾ").replace(/(i|í|ý|y)/gi,"ᛁ")
